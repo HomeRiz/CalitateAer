@@ -1,0 +1,6 @@
+{
+  "name": "RNMCA Air Quality",
+  "render_readme": true,
+  "country": ["RO"],
+  "homeassistant": "2024.1.0"
+}

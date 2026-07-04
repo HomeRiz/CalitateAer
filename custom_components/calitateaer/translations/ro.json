@@ -1,0 +1,63 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Conectare RNMCA",
+        "description": "Introduceti datele de autentificare primite de la calitateaer.ro.",
+        "data": {
+          "username": "Utilizator",
+          "password": "Parola",
+          "language": "Limba afisata",
+          "radius": "Raza de scanare (km)",
+          "location_method": "Metoda localizare"
+        }
+      },
+      "address": {
+        "title": "Cautare adresa",
+        "description": "Introduceti adresa pentru a obtine coordonatele.",
+        "data": {
+          "address": "Adresa completa"
+        }
+      },
+      "manual": {
+        "title": "Coordonate manuale",
+        "description": "Puteti gasi coordonatele folosind [gps-coordinates.net](https://www.gps-coordinates.net/).",
+        "data": {
+          "latitude": "Latitudine",
+          "longitude": "Longitudine"
+        }
+      },
+      "poi": {
+        "title": "Puncte monitorizate",
+        "description": "Optional, adauga puncte protejate de interes. Lasa formularul gol pentru finalizare. Alege un punct exact pe harta Home Assistant, scrie judetul si localitatea pentru geocodare sau introdu coordonatele manual.",
+        "data": {
+          "poi_location": "Alege punct exact pe harta Home Assistant",
+          "poi_county": "Text cautare judet",
+          "poi_locality": "Text cautare oras, comuna sau sector Bucuresti",
+          "poi_name": "Nume afisat",
+          "latitude": "Latitudine (optional)",
+          "longitude": "Longitudine (optional)",
+          "add_more": "Adauga inca un punct dupa acesta"
+        }
+      }
+    },
+    "error": {
+      "auth": "Utilizator sau parola incorecta.",
+      "cannot_connect": "Eroare de conexiune la server.",
+      "geocode_failed": "Nu am gasit coordonatele pentru aceasta adresa.",
+      "poi_required": "Introdu orasul/comuna/sectorul sau latitudinea si longitudinea."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Configurare RNMCA",
+        "data": {
+          "radius": "Modifica raza de scanare (km)",
+          "language": "Limba afisata",
+          "add_more": "Adauga punct monitorizat"
+        }
+      }
+    }
+  }
+}

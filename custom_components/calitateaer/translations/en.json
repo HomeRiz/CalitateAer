@@ -1,0 +1,62 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "RNMCA Connection",
+        "description": "Enter the credentials provided by calitateaer.ro.",
+        "data": {
+          "username": "Username",
+          "password": "Password",
+          "language": "Display Language",
+          "radius": "Scanning Radius (km)",
+          "location_method": "Location Method"
+        }
+      },
+      "address": {
+        "title": "Search Address",
+        "description": "Enter the address to retrieve coordinates.",
+        "data": {
+          "address": "Full Address"
+        }
+      },
+      "manual": {
+        "title": "Manual Coordinates",
+        "data": {
+          "latitude": "Latitude",
+          "longitude": "Longitude"
+        }
+      },
+      "poi": {
+        "title": "Add Monitored Points",
+        "description": "Optionally add more protected points of interest. Leave this form empty to finish. Pick an exact point on the Home Assistant map, type a county/city pair to geocode it, or enter latitude and longitude manually.",
+        "data": {
+          "poi_location": "Pick exact point on Home Assistant map",
+          "poi_county": "County / Judet search text",
+          "poi_locality": "City, commune, or Bucharest sector search text",
+          "poi_name": "Display name",
+          "latitude": "Latitude (optional)",
+          "longitude": "Longitude (optional)",
+          "add_more": "Add another point after this one"
+        }
+      }
+    },
+    "error": {
+      "auth": "Invalid username or password.",
+      "cannot_connect": "Failed to connect to server.",
+      "geocode_failed": "Could not find coordinates for this address.",
+      "poi_required": "Enter a city/commune/sector or provide latitude and longitude."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "RNMCA Configuration",
+        "data": {
+          "radius": "Modify scanning radius (km)",
+          "language": "Display Language",
+          "add_more": "Add monitored point"
+        }
+      }
+    }
+  }
+}

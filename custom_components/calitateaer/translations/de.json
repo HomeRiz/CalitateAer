@@ -1,0 +1,62 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "RNMCA-Verbindung",
+        "description": "Geben Sie die von calitateaer.ro bereitgestellten Zugangsdaten ein.",
+        "data": {
+          "username": "Benutzername",
+          "password": "Passwort",
+          "language": "Anzeigesprache",
+          "radius": "Suchradius (km)",
+          "location_method": "Standortmethode"
+        }
+      },
+      "address": {
+        "title": "Adresse suchen",
+        "description": "Geben Sie die Adresse ein, um Koordinaten abzurufen.",
+        "data": {
+          "address": "Vollstandige Adresse"
+        }
+      },
+      "manual": {
+        "title": "Manuelle Koordinaten",
+        "data": {
+          "latitude": "Breitengrad",
+          "longitude": "Langengrad"
+        }
+      },
+      "poi": {
+        "title": "Uberwachte Punkte hinzufugen",
+        "description": "Optional weitere geschutzte Interessenpunkte hinzufugen. Lassen Sie dieses Formular leer, um abzuschliessen. Wahlen Sie einen exakten Punkt auf der Home Assistant Karte, geben Sie Kreis/Ort zur Geokodierung ein oder tragen Sie Breiten- und Langengrad manuell ein.",
+        "data": {
+          "poi_location": "Exakten Punkt auf der Home Assistant Karte wahlen",
+          "poi_county": "Suchtext Kreis / Judet",
+          "poi_locality": "Suchtext Stadt, Gemeinde oder Bukarest-Sektor",
+          "poi_name": "Anzeigename",
+          "latitude": "Breitengrad (optional)",
+          "longitude": "Langengrad (optional)",
+          "add_more": "Danach einen weiteren Punkt hinzufugen"
+        }
+      }
+    },
+    "error": {
+      "auth": "Ungultiger Benutzername oder ungultiges Passwort.",
+      "cannot_connect": "Verbindung zum Server fehlgeschlagen.",
+      "geocode_failed": "Fur diese Adresse konnten keine Koordinaten gefunden werden.",
+      "poi_required": "Geben Sie eine Stadt/Gemeinde/einen Sektor ein oder geben Sie Breiten- und Langengrad an."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "RNMCA-Konfiguration",
+        "data": {
+          "radius": "Suchradius andern (km)",
+          "language": "Anzeigesprache",
+          "add_more": "Uberwachten Punkt hinzufugen"
+        }
+      }
+    }
+  }
+}

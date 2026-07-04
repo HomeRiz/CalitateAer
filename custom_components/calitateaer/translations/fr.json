@@ -1,0 +1,62 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connexion RNMCA",
+        "description": "Saisissez les identifiants fournis par calitateaer.ro.",
+        "data": {
+          "username": "Nom d'utilisateur",
+          "password": "Mot de passe",
+          "language": "Langue d'affichage",
+          "radius": "Rayon de recherche (km)",
+          "location_method": "Methode de localisation"
+        }
+      },
+      "address": {
+        "title": "Rechercher une adresse",
+        "description": "Saisissez l'adresse pour obtenir les coordonnees.",
+        "data": {
+          "address": "Adresse complete"
+        }
+      },
+      "manual": {
+        "title": "Coordonnees manuelles",
+        "data": {
+          "latitude": "Latitude",
+          "longitude": "Longitude"
+        }
+      },
+      "poi": {
+        "title": "Ajouter des points surveilles",
+        "description": "Ajoutez eventuellement d'autres points d'interet proteges. Laissez ce formulaire vide pour terminer. Choisissez un point exact sur la carte Home Assistant, saisissez departement/localite pour le geocodage ou entrez latitude et longitude manuellement.",
+        "data": {
+          "poi_location": "Choisir un point exact sur la carte Home Assistant",
+          "poi_county": "Texte de recherche departement / Judet",
+          "poi_locality": "Texte de recherche ville, commune ou secteur de Bucarest",
+          "poi_name": "Nom affiche",
+          "latitude": "Latitude (optionnel)",
+          "longitude": "Longitude (optionnel)",
+          "add_more": "Ajouter un autre point apres celui-ci"
+        }
+      }
+    },
+    "error": {
+      "auth": "Nom d'utilisateur ou mot de passe invalide.",
+      "cannot_connect": "Impossible de se connecter au serveur.",
+      "geocode_failed": "Impossible de trouver les coordonnees pour cette adresse.",
+      "poi_required": "Saisissez une ville/commune/secteur ou fournissez latitude et longitude."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Configuration RNMCA",
+        "data": {
+          "radius": "Modifier le rayon de recherche (km)",
+          "language": "Langue d'affichage",
+          "add_more": "Ajouter un point surveille"
+        }
+      }
+    }
+  }
+}

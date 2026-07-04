@@ -1,0 +1,62 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Conexion RNMCA",
+        "description": "Introduce las credenciales proporcionadas por calitateaer.ro.",
+        "data": {
+          "username": "Usuario",
+          "password": "Contrasena",
+          "language": "Idioma mostrado",
+          "radius": "Radio de busqueda (km)",
+          "location_method": "Metodo de ubicacion"
+        }
+      },
+      "address": {
+        "title": "Buscar direccion",
+        "description": "Introduce la direccion para obtener coordenadas.",
+        "data": {
+          "address": "Direccion completa"
+        }
+      },
+      "manual": {
+        "title": "Coordenadas manuales",
+        "data": {
+          "latitude": "Latitud",
+          "longitude": "Longitud"
+        }
+      },
+      "poi": {
+        "title": "Agregar puntos monitorizados",
+        "description": "Opcionalmente agrega mas puntos de interes protegidos. Deja este formulario vacio para terminar. Elige un punto exacto en el mapa de Home Assistant, escribe provincia/localidad para geocodificarlo o introduce latitud y longitud manualmente.",
+        "data": {
+          "poi_location": "Elegir punto exacto en el mapa de Home Assistant",
+          "poi_county": "Texto de busqueda provincia / Judet",
+          "poi_locality": "Texto de busqueda ciudad, comuna o sector de Bucarest",
+          "poi_name": "Nombre mostrado",
+          "latitude": "Latitud (opcional)",
+          "longitude": "Longitud (opcional)",
+          "add_more": "Agregar otro punto despues de este"
+        }
+      }
+    },
+    "error": {
+      "auth": "Usuario o contrasena invalidos.",
+      "cannot_connect": "No se pudo conectar al servidor.",
+      "geocode_failed": "No se encontraron coordenadas para esta direccion.",
+      "poi_required": "Introduce una ciudad/comuna/sector o proporciona latitud y longitud."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Configuracion RNMCA",
+        "data": {
+          "radius": "Modificar radio de busqueda (km)",
+          "language": "Idioma mostrado",
+          "add_more": "Agregar punto monitorizado"
+        }
+      }
+    }
+  }
+}

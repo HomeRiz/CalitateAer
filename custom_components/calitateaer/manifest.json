@@ -1,0 +1,12 @@
+{
+  "domain": "calitateaer",
+  "name": "RNMCA Air Quality",
+  "codeowners": ["@HomeRiz"],
+  "config_flow": true,
+  "dependencies": [],
+  "documentation": "https://github.com/HomeRiz/CalitateAer",
+  "iot_class": "cloud_polling",
+  "issue_tracker": "https://github.com/HomeRiz/CalitateAer/issues",
+  "requirements": [],
+  "version": "1.2.0"
+}

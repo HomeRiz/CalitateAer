@@ -1,0 +1,62 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connessione RNMCA",
+        "description": "Inserisci le credenziali fornite da calitateaer.ro.",
+        "data": {
+          "username": "Nome utente",
+          "password": "Password",
+          "language": "Lingua visualizzata",
+          "radius": "Raggio di ricerca (km)",
+          "location_method": "Metodo di localizzazione"
+        }
+      },
+      "address": {
+        "title": "Cerca indirizzo",
+        "description": "Inserisci l'indirizzo per ottenere le coordinate.",
+        "data": {
+          "address": "Indirizzo completo"
+        }
+      },
+      "manual": {
+        "title": "Coordinate manuali",
+        "data": {
+          "latitude": "Latitudine",
+          "longitude": "Longitudine"
+        }
+      },
+      "poi": {
+        "title": "Aggiungi punti monitorati",
+        "description": "Facoltativamente aggiungi altri punti di interesse protetti. Lascia questo modulo vuoto per terminare. Scegli un punto esatto sulla mappa di Home Assistant, inserisci provincia/localita per geocodificarlo oppure inserisci latitudine e longitudine manualmente.",
+        "data": {
+          "poi_location": "Scegli punto esatto sulla mappa Home Assistant",
+          "poi_county": "Testo ricerca provincia / Judet",
+          "poi_locality": "Testo ricerca citta, comune o settore di Bucarest",
+          "poi_name": "Nome visualizzato",
+          "latitude": "Latitudine (opzionale)",
+          "longitude": "Longitudine (opzionale)",
+          "add_more": "Aggiungi un altro punto dopo questo"
+        }
+      }
+    },
+    "error": {
+      "auth": "Nome utente o password non validi.",
+      "cannot_connect": "Connessione al server non riuscita.",
+      "geocode_failed": "Coordinate non trovate per questo indirizzo.",
+      "poi_required": "Inserisci una citta/comune/settore o fornisci latitudine e longitudine."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Configurazione RNMCA",
+        "data": {
+          "radius": "Modifica raggio di ricerca (km)",
+          "language": "Lingua visualizzata",
+          "add_more": "Aggiungi punto monitorato"
+        }
+      }
+    }
+  }
+}
